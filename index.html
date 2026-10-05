@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ইমন ভাইয়ের ওয়েবসাইট — অ্যাপ ডাউনলোড ও প্রয়োজনীয় লিংক।">
+  <title>ইমন ভাইয়ের ওয়েবসাইট</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <video id="bgVideo" class="bg-video" autoplay muted loop playsinline poster="app_icon.png">
+    <source src="wallpaper.mp4" type="video/mp4">
+  </video>
+  <div class="bg-fallback"></div>
+  <div class="overlay"></div>
+
+  <main class="container">
+    <section id="welcome" class="card hero">
+      <img src="app_icon.png" class="app-icon" alt="App icon">
+      <p class="badge">OFFICIAL DOWNLOAD PAGE</p>
+      <h1>স্বাগতম আপনাকে ইমন ভাইয়ের ওয়েবসাইটে</h1>
+      <p>অ্যাপ ডাউনলোড করতে প্রথমে আপনার পাসওয়ার্ড দিয়ে লগইন করুন।</p>
+      <button class="primary" onclick="showLogin()">শুরু করুন</button>
+    </section>
+
+    <section id="login" class="card hidden">
+      <h2>🔐 পাসওয়ার্ড দিয়ে লগইন</h2>
+      <p class="muted">প্রতিটি পাসওয়ার্ড একবার ব্যবহার করা যাবে। সফল হলে পরের পাসওয়ার্ড ব্যবহার করুন।</p>
+      <div class="input-row">
+        <input id="password" type="password" placeholder="পাসওয়ার্ড লিখুন" autocomplete="off">
+        <button class="primary" onclick="login()">লগইন</button>
+      </div>
+      <p id="message" class="message"></p>
+      <div class="progress"><span id="progressBar"></span></div>
+      <p id="progressText" class="small"></p>
+    </section>
+
+    <section id="social" class="card hidden">
+      <h2>📢 আমাদের সঙ্গে যুক্ত থাকুন</h2>
+      <p>অ্যাপ ডাউনলোডের আগে আমাদের Facebook, TikTok ও YouTube চ্যানেল দেখে Follow/Subscribe করতে পারেন।</p>
+      <div class="links">
+        <a href="https://www.facebook.com/share/1CJ58eZZXt/" target="_blank" rel="noopener" class="social facebook">Facebook</a>
+        <a href="https://www.tiktok.com/@ffidsaler1587?_r=1&_t=ZS-9AIA6MfePEk" target="_blank" rel="noopener" class="social tiktok">TikTok</a>
+        <a href="https://youtube.com/@toufikvai2010?si=lUcdEy_eQMLl_POq" target="_blank" rel="noopener" class="social youtube">YouTube</a>
+      </div>
+      <div class="help"><b>হেল্পলাইন WhatsApp:</b> <a href="https://wa.me/8801344839207" target="_blank" rel="noopener">01344839207</a></div>
+      <label class="check"><input type="checkbox" id="socialDone"> লিংকগুলো দেখে নিয়েছি, এখন Download অপশন দেখাও</label>
+      <button class="primary full" onclick="unlockDownload()">Continue</button>
+    </section>
+
+    <section id="more" class="card hidden">
+      <h2>🌐 আরও কিছু</h2>
+      <div class="items">
+        <div class="item"><b>PRAN</b><span>PRAN-এর বিভিন্ন পণ্য</span></div>
+        <div class="item"><b>MAGGI</b><span>নুডুলস ও খাবারের পণ্য</span></div>
+        <div class="item"><b>নতুন লিংক</b><span>প্রয়োজনীয় ওয়েবসাইট ও তথ্য এখানে যোগ করা যাবে</span></div>
+      </div>
+    </section>
+
+    <section id="download" class="card hidden download-card">
+      <h2>⬇️ অ্যাপ ডাউনলোড</h2>
+      <p>আপনার জন্য অ্যাপটি প্রস্তুত। নিচের বাটনে চাপ দিয়ে APK ডাউনলোড করুন।</p>
+      <a class="download" href="EMON-Panel-Sance-2.0.apk" download>EMON Panel Sance 2.0 APK Download</a>
+      <p class="small">ফাইল: EMON-Panel-Sance-2.0.apk</p>
+    </section>
+
+    <footer>© <span id="year"></span> ইমন ভাইয়ের ওয়েবসাইট</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
